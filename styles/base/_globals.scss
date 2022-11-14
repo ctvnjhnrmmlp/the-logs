@@ -1,0 +1,86 @@
+@use '../constants/extends';
+
+body {
+  background-color: ghostwhite;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin: 0 auto;
+}
+
+.fa {
+  &-brands {
+    @extend %fc-jet-black;
+    @extend %trs-one;
+  }
+
+  &-facebook:hover {
+    @extend %fc-facebook-blue;
+  }
+
+  &-twitter:hover {
+    @extend %fc-twitter-blue;
+  }
+
+  &-github:hover {
+    @extend %fc-github-green;
+  }
+
+  &-stack-overflow:hover {
+    @extend %fc-stack-overflow-orange;
+  }
+
+  &-linkedin:hover {
+    @extend %fc-linkedin-blue;
+  }
+
+  &-hashnode:hover {
+    @extend %fc-hashnode-blue;
+  }
+
+  &-dev:hover {
+    @extend %fc-silver;
+  }
+
+  &-free-code-camp:hover {
+    @extend %fc-silver;
+  }
+
+  &-medium:hover {
+    @extend %fc-silver;
+  }
+}
+
+.link {
+  & {
+    @extend %trs-one;
+  }
+
+  &::selection {
+    @extend %fc-jet-black;
+    @extend %bg-ghost-white;
+  }
+
+  &--facebook:hover {
+    @extend %fc-facebook-blue;
+  }
+
+  &--twitter:hover {
+    @extend %fc-twitter-blue;
+  }
+
+  &--google:hover {
+    @extend %fc-google-red;
+  }
+
+  &--github:hover {
+    @extend %fc-github-green;
+  }
+
+  &--stack-overflow:hover {
+    @extend %fc-stack-overflow-orange;
+  }
+
+  &--linkedin:hover {
+    @extend %fc-linkedin-blue;
+  }
+}

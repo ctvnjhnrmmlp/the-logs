@@ -1,0 +1,191 @@
+@use '../constants/extends' as *;
+@use '../constants/mixins' as *;
+@use '../constants/variables' as *;
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('../../public/fonts/mona-sans.otf');
+  src: url('../../public/fonts/mona-sans.woff') format('woff');
+  src: url('../../public/fonts/mona-sans.woff2') format('woff2');
+  src: url('../../public/fonts/mona-sans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('../../public/fonts/poppins-regular.eot');
+  src: url('../../public/fonts/poppins-regular.woff') format('woff');
+  src: url('../../public/fonts/poppins-regular.woff2') format('woff2');
+  src: url('../../public/fonts/poppins-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+span {
+  @extend %fc-jet-black;
+  @extend %fa-center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+span,
+em,
+pre,
+code {
+  &::selection {
+    @extend %fc-ghost-white;
+    @extend %bg-jet-black;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+span {
+  @extend %font-transform-uppercase;
+  font-family: 'Mona Sans', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+p,
+figure,
+blockquote,
+dl,
+dd,
+a {
+  font-family: 'Poppins Regular', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  @extend %fa-center;
+}
+
+h1 {
+  font-size: clamp(4.27rem, calc(3.75rem + 2.56vw), 5.58rem);
+  letter-spacing: -0.094rem;
+  line-height: 1.025;
+  width: min(95rem, 90%);
+  margin: 0 auto;
+
+  @include media-query(small-tablets) {
+    font-size: clamp(2.72rem, calc(2.36rem + 1.83vw), 3.66rem);
+  }
+
+  @include media-query(mobile-phones) {
+    font-size: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+  }
+}
+
+h2 {
+  font-size: clamp(3.27rem, calc(2.75rem + 2.56vw), 4.58rem);
+  letter-spacing: -0.063rem;
+  line-height: 1;
+
+  @include media-query(small-tablets) {
+    font-size: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  }
+
+  @include media-query(mobile-phones) {
+    font-size: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  }
+}
+
+h3 {
+  font-size: clamp(3rem, calc(2rem + 2.56vw), 4rem);
+  letter-spacing: -0.063rem;
+  line-height: 1;
+  overflow-wrap: break-word;
+
+  @include media-query(small-tablets) {
+    font-size: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  }
+
+  @include media-query(mobile-phones) {
+    font-size: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  }
+}
+
+h4 {
+  font-size: clamp(2.3rem, calc(1.5rem + 2.56vw), 3rem);
+  letter-spacing: -0.063rem;
+  line-height: 1;
+
+  @include media-query(small-tablets) {
+    font-size: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  }
+
+  @include media-query(mobile-phones) {
+    font-size: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  }
+}
+
+a {
+  @extend %fd-none;
+  @extend %trs-one;
+  @extend %fc-ghost-white;
+
+  @include media-query(mobile-phones) {
+    font-size: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.2rem);
+  }
+}
+
+.paragraph {
+  &--footer {
+    @extend %fc-ghost-white;
+
+    &::selection {
+      @extend %fc-jet-black;
+      @extend %bg-ghost-white;
+    }
+
+    @include media-query(mobile-phones) {
+      font-size: clamp(0.91rem, calc(0.89rem + 0.1vw), 0.96rem);
+    }
+  }
+}
+
+.link {
+  font-size: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+}
+
+pre,
+code {
+  font-size: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+  overflow: scroll;
+  background-color: $jet-black;
+  color: ghostwhite;
+
+  @include media-query(mobile-phones) {
+    font-size: clamp(0.91rem, calc(0.89rem + 0.1vw), 0.96rem);
+  }
+}
+
+pre {
+  padding: 2vw;
+}
+
+blockquote {
+  font-size: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+  @include media-query(mobile-phones) {
+    font-size: clamp(0.91rem, calc(0.89rem + 0.1vw), 0.96rem);
+  }
+}
