@@ -1,36 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Logs
 
-## Getting Started
+_Official Blog App_
 
-First, run the development server:
+**Built using Sass, TypeScript, React JS, Next JS, and Styled Components**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A modern and bespoke blog site crafted to showcase my personal insights and experiences. Users can immerse themselves in a collection of minimal-designed blogs, providing a clean and distraction-free reading environment.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Explore a curated collection of my personal blogs, covering a range of topics and experiences. It is a platform designed for both information and inspiration, offering a glimpse into my thoughts and perspectives.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Immerse yourself in a clutter-free reading experience with minimal-designed blogs. The site prioritizes simplicity, making it easy for readers to focus on the content without unnecessary distractions.
